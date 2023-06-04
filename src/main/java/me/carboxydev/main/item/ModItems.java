@@ -13,27 +13,27 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
-  public static final ToolItem HOLLOWFIX_SWORD = new HollowfixSword(
-    HollowfixMaterial.INSTANCE,
-    12,
-    -2.4F,
-    new FabricItemSettings()
-      .group(ItemGroup.COMBAT)
-      .maxCount(1)
-      .rarity(Rarity.EPIC)
-      .fireproof()
-  );
-
-  public static void registerItems() {
-    registerItem("hollowfix_sword", HOLLOWFIX_SWORD);
-  }
-
-  private static Item registerItem(String name, Item item) {
-    DemoMod.LOGGER.debug("Registering Mod Items for" + DemoMod.MOD_ID);
-    return Registry.register(
-      Registry.ITEM,
-      new Identifier(DemoMod.MOD_ID, name),
-      item
+    public static final ToolItem HOLLOWFIX_SWORD = new HollowfixSword(
+        HollowfixMaterial.INSTANCE,
+        12,
+        -2.4F,
+        new FabricItemSettings()
+            .group(ItemGroup.COMBAT)
+            .maxCount(1)
+            .rarity(Rarity.EPIC)
+            .fireproof()
     );
-  }
+
+    public static void registerItems() {
+        registerItem("hollowfix_sword", HOLLOWFIX_SWORD);
+    }
+
+    private static Item registerItem(String name, Item item) {
+        DemoMod.LOGGER.debug("Registering Mod Items for" + DemoMod.MOD_ID);
+        return Registry.register(
+            Registry.ITEM,
+            new Identifier(DemoMod.MOD_ID, name),
+            item
+        );
+    }
 }

@@ -16,8 +16,16 @@ public class ModEnchants {
             new EquipmentSlot[] { EquipmentSlot.MAINHAND }
         );
 
+    public static Enchantment SMELT_TOUCH_ENCHANTMENT =
+        new SmeltTouchEnchantment(
+            Enchantment.Rarity.RARE,
+            EnchantmentTarget.DIGGER,
+            new EquipmentSlot[] { EquipmentSlot.MAINHAND }
+        );
+
     public static void registerEnchantments() {
         registerEnchantment("hollowbite_enchantment", HOLLOWBITE_ENCHANTMENT);
+        registerEnchantment("smelt_touch_enchantment", SMELT_TOUCH_ENCHANTMENT);
     }
 
     private static Enchantment registerEnchantment(

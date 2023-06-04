@@ -8,13 +8,13 @@ import org.slf4j.LoggerFactory;
 
 public class DemoMod implements ModInitializer {
 
-  public static final String MOD_ID = "carboxydev_demo_mod";
-  public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+    public static final String MOD_ID = "carboxydev_demo_mod";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-  @Override
-  public void onInitialize() {
-    LOGGER.info("Initializing Demo Mod");
-    ModItems.registerItems();
-    ModEnchants.registerEnchantments();
-  }
+    @Override
+    public void onInitialize() {
+        LOGGER.info("Initializing Demo Mod");
+        ModItems.registerItems();
+        ModEnchants.registerEnchantments();
+    }
 }

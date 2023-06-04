@@ -3,6 +3,7 @@
 ## Progress
 
 Created items: hollowfix_sword
+
 Created enchantments: hollowbite_enchantment
 
 ## Setup
