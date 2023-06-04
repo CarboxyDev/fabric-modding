@@ -8,10 +8,15 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(TitleScreen.class)
-public class ExampleMixin {
+public abstract class TitleScreenMixin {
+
+    private String splashText;
 
     @Inject(at = @At("HEAD"), method = "init()V")
     private void init(CallbackInfo info) {
-        DemoMod.LOGGER.info("This line is printed by an example mod mixin!");
+        if (this.splashText == null) {
+            this.splashText = "I'm in the Title screen, wooooo!";
+        }
+        DemoMod.LOGGER.info("TitleScreen init");
     }
 }
