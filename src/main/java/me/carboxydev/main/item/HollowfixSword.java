@@ -1,4 +1,4 @@
-package me.carboxydev.main;
+package me.carboxydev.main.item;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;

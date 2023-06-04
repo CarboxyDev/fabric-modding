@@ -1,8 +1,6 @@
 package me.carboxydev.main.item;
 
 import me.carboxydev.main.DemoMod;
-import me.carboxydev.main.HollowfixMaterial;
-import me.carboxydev.main.HollowfixSword;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
